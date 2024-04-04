@@ -7,34 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="flex-container row">
-            <!-- Column 1 -->
-            <div class="flex-container col single-flex">
-                <div class="flex-container row">
-                    <img src="patrick-hendry-unsplash.jpg" alt="A fun picture of mountains!">
-                </div>
-                <div class="flex-container column absolute max-size">
-                    <div class="flex-container row" style="background-color: white;">
-                        <p>left flex row 2</p>
+    <main class="flex-row">
+        <!-- Image Div -->
+        <div class="flex-column flex">
+        </div>
+        <!-- Form Div -->
+        <div class="flex-column flex">
+            <!-- Blurb -->
+            <div class="flex-row flex">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started. <br> <br>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+            <!-- Form -->
+            <div class="flex-column flex">
+                <h2>Let's do this!</h2>
+                <div class="flex-row flex">
+                    <div class="flex-column flex">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="fname">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
                     </div>
-                    <div class="flex-container row absolute" id="caption" style="background-color: white;">
-                        <p>Photo by <a href="https://unsplash.com/@worldsbetweenlines?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Hendry</a> on <a href="https://unsplash.com/photos/a-view-of-a-mountain-with-snow-on-it-oSiu-MSfNw4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                    <div class="flex-column flex">
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="lname">
+                        </div>
+                        <div>
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" id="phone-number" name="pnumber">
+                        </div>
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-pass">
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Column 2 -->
-            <div class="flex-container col triple-flex">
-                <div class="flex-container row third">
-                    <p>This is not a real service! Get bent.</p>
-                </div>
-                <div class="flex-container row third">
-                    <p>Sign up!</p>
-                </div>
-                <div class="flex-container col third">
-                    <button>Create account</button>
-                    <p>right flex row 4</p>
-                </div>
+            <!-- Button -->
+            <div class="flex-row flex">
+                <p>This is where the button goes</p>
             </div>
         </div>
     </main>

@@ -1,69 +1,39 @@
-:root {
-    --image-height: 100vh;
-    --image-width: 100vh;
-}
+/* -- GENERAL -- */
 
 * {
-    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid skyblue;
     box-sizing: border-box;
 }
 
-body {
+body, main, html {
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
+    min-width: 100vw;
 }
 
-main {
-    height: 100vh;
-}
+/* -- FLEXBOX -- */
 
-.flex-container {
+.flex-row {
     display: flex;
 }
 
-.row {
-    flex-direction: row;
-}
-
-.col {
+.flex-column {
+    display: flex;
     flex-direction: column;
 }
 
-.single-flex {
+.flex {
     flex: 1;
 }
 
-.triple-flex {
-    flex: 3;
+
+/* -- STYLING -- */
+
+.top-buffer {
+    margin-top: 10vh;
 }
 
-.third {
-    height: 33vh;
-}
-
-/* -- -- */
-
-button {
-    width: 100px;
-    height: 50px;
-}
-
-img {
-    max-height: var(--image-height);
-    max-width: var(--image-width);
-}
-
-
-/* -- -- */
-
-.absolute {
-    position: absolute;
-}
-
-/* -- -- */
-
-#caption {
-    position: absolute;
-    top: 95vh;
+.bottom-buffer {
+    margin-bottom: 10vh;
 }
