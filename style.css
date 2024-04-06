@@ -131,3 +131,22 @@ label {
     background-color: white;
     box-shadow: 3px 5px 5px #D3D3D3;
 }
+
+/* -- FORM ITEMS -- */
+
+input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    height: 1.5rem;
+    width: 60%;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid skyblue;
+    box-shadow: 1px 5px 5px #D3D3D3;
+}
+
+input:invalid {
+    border: 1px solid red;
+}

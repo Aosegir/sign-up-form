@@ -33,41 +33,83 @@
                         <div class="margin-item">
                             <label for="first-name">First Name</label>
                             <br>
-                            <input type="text" id="first-name" name="fname">
+                            <input
+                                required
+                                type="text"
+                                id="first-name"
+                                name="fname"
+                                minlength="3"
+                                placeholder="John"
+                            >
                         </div>
                         <div class="margin-item">
                             <label for="email">Email</label>
                             <br>
-                            <input type="email" id="email" name="email">
+                            <input
+                                required
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="youremail@provider.com"
+                            >
                         </div>
                         <div class="margin-item">
                             <label for="password">Password</label>
                             <br>
-                            <input type="password" id="password" name="password">
+                            <input
+                                required
+                                type="password"
+                                id="password"
+                                name="password"
+                                minlength="8"
+                                maxlength="16"
+                            >
                         </div>
                     </div>
                     <div class="flex-column flex space-around padding-alignment">
                         <div class="margin-item">
                             <label for="last-name">Last Name</label>
                             <br>
-                            <input type="text" id="last-name" name="lname">
+                            <input
+                                required
+                                type="text"
+                                id="last-name"
+                                name="lname"
+                                minlength="3"
+                                placeholder="Doe"
+                            >
                         </div>
                         <div class="margin-item">
                             <label for="phone-number">Phone Number</label>
                             <br>
-                            <input type="number" id="phone-number" name="pnumber">
+                            <input
+                                required
+                                type="tel"
+                                id="phone-number"
+                                name="pnumber"
+                                placeholder="123-456-7890"
+                                pattern="^\d{3}-\d{3}-\d{4}$"
+                                maxlength="12"
+                            >
                         </div>
                         <div class="margin-item">
                             <label for="confirm-password">Confirm Password</label>
                             <br>
-                            <input type="password" id="confirm-password" name="confirm-pass">
+                            <input
+                                required
+                                type="password"
+                                id="confirm-password"
+                                name="confirm-pass"
+                                minlength="8"
+                                maxlength="16"
+                            >
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Button -->
             <div class="flex-column flex padding-alignment">
-                <button class="margin-item">Create Account</button>
+                <button type="submit" class="margin-item">Create Account</button>
                 <p class="margin-item">Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
