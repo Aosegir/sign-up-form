@@ -8,11 +8,13 @@
 </head>
 <body>
     <main class="flex-row">
-        <!-- Image Div -->
-        <div class="flex-column flex">
+        <!-- MAIN DIV 1 - Image Div -->
+        <div class="flex-column flex relative">
+            <img src="marcell-rubies-unsplash.jpg" alt="A beautiful picutre of the aurora borealis">
+            <p id="image-banner" class="text-center center">ODIN</p>
         </div>
-        <!-- Form Div -->
-        <div class="flex-column flex">
+        <!-- MAIN DIV 2 - Form Div -->
+        <div class="flex-column flex-two">
             <!-- Blurb -->
             <div class="flex-row flex">
                 <p>
@@ -26,39 +28,46 @@
             <div class="flex-column flex">
                 <h2>Let's do this!</h2>
                 <div class="flex-row flex">
-                    <div class="flex-column flex">
+                    <div class="flex-column flex space-around">
                         <div>
                             <label for="first-name">First Name</label>
+                            <br>
                             <input type="text" id="first-name" name="fname">
                         </div>
                         <div>
                             <label for="email">Email</label>
+                            <br>
                             <input type="email" id="email" name="email">
                         </div>
                         <div>
                             <label for="password">Password</label>
+                            <br>
                             <input type="password" id="password" name="password">
                         </div>
                     </div>
-                    <div class="flex-column flex">
-                        <div>
+                    <div class="flex-column flex space-around">
+                        <div class="center">
                             <label for="last-name">Last Name</label>
+                            <br>
                             <input type="text" id="last-name" name="lname">
                         </div>
-                        <div>
+                        <div class="center">
                             <label for="phone-number">Phone Number</label>
+                            <br>
                             <input type="number" id="phone-number" name="pnumber">
                         </div>
-                        <div>
+                        <div class="center">
                             <label for="confirm-password">Confirm Password</label>
+                            <br>
                             <input type="password" id="confirm-password" name="confirm-pass">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Button -->
-            <div class="flex-row flex">
-                <p>This is where the button goes</p>
+            <div class="flex-column flex">
+                <button>Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
             </div>
         </div>
     </main>
